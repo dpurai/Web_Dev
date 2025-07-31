@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in html - lets learn it </title>
+</head>
+
+<body>
+    <h1>Form to apply for a faculty posiiton in CIT</h1>
+    <div>
+        <form action="post">
+            <input type="text" name="username" placeholder="Enter your username">
+        </form>
+    </div>
+    <div>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="subscribe">Subscribe to newsletter</label>
+    </div>
+    <div>
+       
+        <label for="comment">Enter your comments here</label>
+        <br> <!-- not recommended -->
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+    </div>
+    <div>
+        <label for="fruits">Choose your favorite fruit:</label>
+        <select id="fruits" name="fruits">
+      <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
+      <option value="cherry">Cherry</option>
+</select> 
+    </div>
+</body> 
+
+</html>
