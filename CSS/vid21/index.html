@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS specificity</title>
+</head>
+<style>
+    /* The specificity of this selector is 1 */
+    h1 {
+        color: black;
+
+    }
+
+    /* The specificity of this selector is 10 */
+    .yellow {
+        color: yellow;
+
+    }
+
+    /* The specificity of this selector is 10 */
+    .cred {
+        color: red;
+
+    }
+
+    /* The specificity of this selector is 10 */
+    .cpurple {
+        color: purple;
+
+    }
+ /* The specificity of this selector is 1 + 10 = 11 */
+    h1.yellow{
+        color:yellow;
+    }
+ /* The specificity of this selector will be 1 + 10 + 10 + 10 = 41
+element selector + class selector + class selector + attribute selector + psuedo class */
+    a.harryclass.rohan-class[href]:hover{
+        color:red;
+
+    }
+
+    /* this is attribute selector. The specificity of this selector is alsao 10
+
+    [data-x=a]{ 
+        background-color:green;
+    
+    } 
+    if '!important'(specificiyt value = 1000) is added anywhere in the selctors then it has the highest priority    */
+</style>
+
+<body>
+    <h1 class="yellow cred cpurple" data-x="a"> HAlllooooo wassupp ma chinggas</h1>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing units</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* here 'html' element is the root element */
+    html {
+        font-size: 12px;
+    }
+
+    .box {
+        border: 2px solid black;
+        background-color: aqua;
+        /* width: 956px; */
+        height: 20vh;
+        width: 50vw;
+        margin: auto;
+    }
+
+    .container {
+        border: 2px solid black;
+        background-color: aqua;
+        /* width: 956px;*/
+        width: 50vw;
+        font-size: 16px;
+        /* height: 80vh; */
+        margin: 15px auto;
+        min-height: 80vh;
+    }
+
+    /* here the paragraph inherits its font-size from the container class and 'em' states the font-size will be coefficient of em times the inherited font size
+example here: font-size is 16px and paragram has 2em => 16*2 = 32px will be the font size of the text inside paragraph */
+    .container p {
+        font-size: 2em;
+    }
+
+    /* 'rem' means the root element se jitna font size inherit krna tha usta times
+here, root element me font-size:12px and container2 ka para meh fontsize 2rem 
+means 12*2 = 24px hga fontsize of container2 para */
+
+    .container2 p {
+        border: 2px solid black;
+        width: 50vw;
+        font-size: 2rem;
+        margin: auto;
+        background-color: aqua;
+
+    }
+
+    div > div{
+        border:2px solid red;
+        width:50%;
+    }
+
+    div > div > div{
+        border: 2px solid blue;
+        width: 50%;
+    }
+    .mycont{
+        background-color: aqua;
+        color:black;
+        font-size: 22px;
+        /* width:100vmin; here vmin means vh in computer and in mobiles it means width */
+        border: 2px solid black;
+        width: 50vw;
+        margin: 23px auto;
+
+    }
+</style>
+
+<body>
+    <div class="box">
+        This is a boxxa
+    </div>
+
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, est? Blanditiis dolorem exercitationem excepturi fugiat, itaque tempora mollitia rem laborum incidunt ab. Nulla sit ipsum perspiciatis, recusandae voluptatibus saepe iusto ratione velit, necessitatibus ipsa doloremque quisquam, nobis nemo veritatis non natus modi quod aperiam quae suscipit et? Sed tempore odit reprehenderit illum quibusdam.
+
+            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ad facere reprehenderit numquam maiores laudantium ab error eos explicabo, adipisci exercitationem quaerat repudiandae dignissimos velit veniam possimus quisquam laborum labore quos expedita maxime tempora voluptatum. Quas quaerat error corporis, neque reprehenderit amet?</div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div class="mycont">
+        <p>Iam another container</p>
+    </div>
+</body>
+
+</html>
