@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css shadows and outlines</title>
+</head>
+<style>
+    .box{
+        border: 3px solid black ;
+        box-shadow: 15px 10px 5px 5px #2b77ad;
+    }
+    .text-element{
+        text-shadow: 1px 2px 2px #b71010 ;
+        outline: 2px solid green;
+        border:3px solid black;
+        outline-offset: 2px;
+        border-radius: 14px; /* outline ko curve directly nhi sakta border raidus ka madat se kar sakta */
+    }
+</style>
+<body>
+    <div class="box">mid-sem pass hojanae se hgyaa</div>
+
+    <p class="text-element">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo enim necessitatibus accusantium.
+    </p>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Properties</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box {
+        border: 2px solid black;
+        display: inline-block;
+        width: 50px;
+        padding: 45px;
+        margin: 40px;
+
+    }
+
+    .box1 {
+        /* display: none; */
+        /* display: none tra object ko gayab kara deta hai with the space it took */
+        visibility:hidden;
+        /* whereas visibility: hidden, keeps the space the obejct was given but the object disappears */
+    }
+</style>
+
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+    <div class="box box1">
+        I am a boy
+    </div>
+    <div class="box">im a girl
+
+    </div>
+
+    <span>helloo
+
+    </span>
+    <span> im a trans</span>
+</body>
+
+</html>
