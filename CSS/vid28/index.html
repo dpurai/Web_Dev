@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position property</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        border:2px solid black;
+        margin: 4px;
+        padding: 4px;
+        height: 23vh;
+        width: 45vw;
+
+    }
+
+    .box1{
+        background-color: aliceblue;
+        /* position: absolute; if pos: absolute then if top , bottom right left given then it will be relative to its parent position value if no parent is position then it will go to top i.e html body  */
+        /* top: 0px; */
+        /* position:sticky; sticky means the element will act as static until we scroll through it then it stick to the desired position , it is used in nav bar basically chipka rahega ek jaga unlike fixed property jo ek hi jaga me rehtai scroll kro ya nahi
+        top:4px;
+        width:45px; */
+        position: absolute;
+        left:0px;
+    }
+    .box2{
+        background-color: aqua;
+
+        /* positive: relative normally position of every element is static to change any direction of the element, we need to give position relative so that we can move it top bottom left right of its position */
+
+        /* z-index: 1; it means if the element is under some other element then with z-index we can bring it to top */
+        
+    }
+    .box3{
+        background-color: blue;
+         /* position: fixed; what it does that if this is applied in any element then it will stay at the given position no matter if ur scrolling up or down
+         bottom: 4px;
+         height: 11vh;
+         width: 34vw; */
+
+    }
+    .box4{
+        background-color: brown;
+    }
+    .parent{
+        margin: 140px;
+        padding: 135px;
+        border:2px solid blue;
+        /* position: relative; */
+
+        /* Exception: Transform, fliter or perspective properties can also make an element positioned */
+        /* transform: translate(0); */
+        /* filter: invert(2); */
+        /* perspective: 0em; */
+
+    }
+</style>
+
+<body>
+    <div class="parent">
+        
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+</html>

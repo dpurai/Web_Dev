@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on CSS selectors</title>
+</head>
+<style>
+    /* .box:first-child {
+        background-color: red;
+        ; 
+    }*/
+
+    /* .box::first-line {
+        color: green;
+    } */
+    /* .boxes *{
+        color: blue;
+        border:3px solid black;
+
+    }
+
+    [data-color="primary"]{ /*atrribute selector
+        margin-top: 35px;
+    }
+
+    /* also group can be done too 
+    p,[data-color="primary"],.box{
+        padding:10px;
+    } */
+    /* nth child selector : iska matlab hga ki box class me jo even wala childs hoga uske css style lagega smae for odd
+    .box:nth-child(even) {
+        background-color: red;
+    }*/
+
+    /* .box:nth-last-child(1){
+        background-color: red; yeh niche se jo number hga usme style lagega
+    } */
+
+    .boxes::before{
+        content:"HELLO NIGGA"; /* both of this are a another way to add elements in html file */
+        color:green;
+    }
+    .boxes::after{
+        content:"SYBAU";
+        color:cyan;
+    }
+
+    .boxes::selection{ /*this adds the style if a user selects the element inside boxes for every text we can just use (::selection and the style)*/
+        color:aqua;
+        background-color:black;
+    }
+
+    .box::first-letter{
+        color:peru;
+        font-size: 45px;
+    }
+    input::placeholder{
+        color:darkcyan;
+    }
+
+
+</style>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Iam the very first box
+        </div>
+        <div class="box">Iam a first box</div>
+        <div class="box">Iam a first box</div>
+        <input type="text" placeholder="Type your shit here">
+    </div>
+</body>
+
+</html>

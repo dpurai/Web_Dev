@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow</title>
+</head>
+<style>
+    .box{
+        height: 20vh;
+        width: 20vw;
+        border: 2px solid black;
+        overflow: auto;
+        overflow-x: hidden;
+        overflow-y:auto;
+
+        /* above 3 overflow ka alternate 
+        overflow: hidden auto;
+                    (x)  (y) */
+
+        /* white-space: nowrap; takes full horizontal space basically text ko niche mat girao */
+        
+         /* text-overflow: ellipsis; tells that theres more texts using 3 dots (...) */
+    }
+</style>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nam accusamus similique, accusantium iste amet voluptas adipisci! Numquam explicabo quisquam omnis, odit sed eum corporis quis amet, ullam, suscipit aspernatur! Sapiente fugit nesciunt sequi neque exercitationem explicabo sed minus cumque distinctio? Optio error illum excepturi minima ut iste ipsam atque! Praesentium, minus odit quia impedit sed inventore omnis, voluptatem cumque magni totam, reprehenderit perferendis eveniet ab ad! Illum, ipsa.
+    </div>
+</body>
+</html>

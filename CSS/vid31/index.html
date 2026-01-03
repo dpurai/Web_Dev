@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+</head>
+<style>
+    body {
+        background-color: #ff0000;
+    }
+
+    @media screen and (orientation: portrait) {
+        .boxes:first-child {
+            color: yellow;
+        }
+body{
+    border:3px solid darkgreen;
+}
+
+    }
+
+    @media only screen and (max-width:455px) {
+        body {
+
+            background-color: blue;
+        }
+
+        .boxes {
+            flex-direction: column;
+        }
+
+    }
+
+    /* basic syntax: @media not/only mediatype and (expressions) {
+        css-code;
+        } */
+    .box {
+        background-color: bisque;
+        height: 235px;
+        width: 250px;
+        padding: 3px;
+        margin: 3px;
+    }
+
+    .boxes {
+        display: flex;
+    }
+</style>
+
+<body>
+    <div class="boxes">
+        <div class="box">maya mororome maya</div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

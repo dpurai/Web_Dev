@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+</head>
+<style>
+   :root{ /* these are the global varible isko direct le saktai to use anywhere without having to put color in every element also not only colors but other things also can be used as a variable*/
+        --color:red;
+        --seccolor:green;
+        --defpad:20px;
+        --defop:0.5;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .nav{
+        background-color:var(--color);
+    }
+    .container{
+        background-color:var(--seccolor)
+    }
+
+    ul li{
+        list-style: none;
+        padding:var(--defpad);
+        border: 2px solid var(--seccolor);
+        opacity: var(--defop);
+    }
+
+    ul li:first-child{
+        --color:orange; /*yeh idhar put krne se local variable ban gya n yeh tag ka andar if var colo ko use kia tha yeh follow hga not the global one */
+        background-color: var(--color, blue); /*idhar blue use hga incase the variable is not defined*/
+    }
+    ul{
+        display: flex;
+    }
+
+</style>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro velit dolorum ex perferendis soluta illum magni ducimus harum vitae obcaecati tenetur officiis pariatur placeat officia, numquam, ullam doloremque labore consectetur enim, architecto distinctio fuga quae nostrum! Odio quos sint eius explicabo! Quasi tempora minus sit!
+    </div>
+</body>
+</html>

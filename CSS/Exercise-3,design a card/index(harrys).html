@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS card design</title>
+</head>
+<style>@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        padding: 50px;
+        background-color: grey;
+    }
+
+    .card {
+        height: 350px;
+        width: 200px;
+        background-color: white;
+        border-radius: 7px;
+
+    }
+
+    .image {
+        padding: 5px;
+    }
+
+    .image img {
+        border-radius: 7px;
+    }
+
+    .content {
+        padding: 13px;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-style: normal;
+    }
+  
+
+    .content p {
+        font-size: 10px;
+        color: grey;
+    }
+
+    .Capsules {
+        padding: 0px 10px;
+    }
+    .button{
+        text-align: center;
+    }
+.button button{
+    border-radius: 13px;
+    padding: 5px 7px;
+    font-size: 12px;
+    background-color: rgb(15, 195, 255);
+    color: blue;
+    border: none;
+    font-size: 10px;
+}
+    /* padding me pehle wala top bottom ka padding pos and dusra wala left right ka pos */
+    /* and if padding : 0px 23px 4px 23px then pehla top second left third bottom 4th right ka position ko dekhtai */
+    .Capsules span {
+        border: 1px solid grey;
+        padding: 2px 4px;
+        border-radius: 18px;
+        font-size: 10px;
+
+    }
+
+    .content h2{
+        font-size: 20px;
+        padding: 10px -5px;
+    }
+
+</style>
+
+<body>
+    <div class="card">
+        <div class="image">
+            <img width="190px"
+                src="https://media.gettyimages.com/id/1299754707/photo/detail-of-hand-touching-water-surface-of-lake-at-sunset.jpg?s=612x612&w=0&k=20&c=B54icLAeISWnP9bxML32wX8UTCfPrGBNHISwCywCCGE="
+                alt="">
+        </div>
+        <div class="Capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="content">
+            <h2>Hemonto jamba</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolorem nihil reprehenderit autem
+                dolores illum pariatur est praesentium, ipsam nobis vero, nulla nisi!</p>
+        </div>
+        <div class="button">
+            <button>Read more</button>
+        </div>
+    </div>
+</body>
+
+</html>

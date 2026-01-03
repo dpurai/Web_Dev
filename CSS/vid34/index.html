@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and clear</title>
+</head>
+<style>
+    img{
+        float: right; /*img ya koi bhi object left ya right me chipka rhega */
+        /* 'both' bhi option hota hai */
+    }
+    .cards{
+        border:3px solid red;
+        display: flow-root;
+    }
+
+    .card{
+        border:2px solid black;
+    }
+
+    .card:nth-child(3){
+        background-color: navajowhite;
+        clear:right; /*clear se agar koi bhi img(or diff element) float krrha hga in the specified direction then usko hata detai, basically idhar img right me float kra tha so usko right me float krne ka permission hata dia */
+    }
+</style>
+<body>
+    <div class="cards">
+        <img src="https://cdn-front.freepik.com/home/anon-rvmp/creative-suite/video-creation/intros-outros.webp" alt="" width="300px">
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nam nemo atque accusamus molestias at, natus eius obcaecati amet, vel dolorum dicta odio assumenda illo sed praesentium esse. Cupiditate, neque!</div>
+        <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis inventore, incidunt maiores repellat nam ducimus est perspiciatis debitis cum accusantium facere neque esse impedit quas aperiam? Accusantium dolor nam minus reprehenderit quae ullam eos autem, commodi dicta aliquid iusto ipsam quo! Cumque, qui ipsa perspiciatis ducimus, ratione molestiae, molestias debitis commodi quidem alias minima. Architecto quas aliquam aspernatur cum nobis eaque adipisci nam suscipit voluptate earum dolores tempora odit sapiente, deserunt, quam tenetur impedit at provident recusandae? Aut quam veniam possimus optio accusantium ipsa molestias a reiciendis, hic, ea, ratione distinctio dolores? Ullam porro doloribus, ipsam esse corporis aperiam possimus dignissimos, facilis laborum sapiente consectetur est, quibusdam a sequi nobis enim! Unde, enim eligendi. Est facilis nesciunt dolore voluptatum magnam totam dolor porro eaque temporibus possimus reprehenderit, magni, consequuntur id aliquid! Iusto blanditiis consectetur dolores excepturi possimus ducimus quia est fugit aspernatur? Officia, assumenda. Accusantium perspiciatis eligendi, ratione voluptates nesciunt assumenda ipsam numquam asperiores tenetur optio quaerat omnis, exercitationem, sed amet inventore! Modi praesentium quasi adipisci rerum veritatis! Fuga assumenda dignissimos at veniam enim, tempora officiis molestiae repellat ut veritatis itaque consequuntur vero temporibus dolorem quia a accusantium nobis eius porro illo dolore nisi excepturi adipisci incidunt? Culpa voluptate, voluptatem quas, quasi dicta sint vero ratione quaerat praesentium iure minima beatae enim maxime ad quos facere eos, recusandae dolorum quo non. Corporis ad quas labore sit quibusdam ratione mollitia in, explicabo officiis accusantium consectetur consequatur esse aspernatur iste vitae nemo laborum totam, error eveniet, veritatis consequuntur. Aspernatur dolores fugit repudiandae optio sunt reiciendis consectetur, ea velit voluptate id laudantium aut illum at temporibus eligendi soluta rem repellat! Dicta officiis rerum cumque, saepe nesciunt illo veniam architecto qui deserunt aut quos iusto impedit illum recusandae quas, vel ullam laboriosam. Accusamus culpa dolores impedit totam debitis quod corrupti. Maxime in culpa nihil fugiat nemo architecto laborum impedit esse necessitatibus officia optio doloribus, quo odio ut, voluptates nesciunt at! Consequuntur, facilis. Esse excepturi eius eaque. Cupiditate non voluptatem praesentium eos necessitatibus odio. Earum impedit quia repellat perferendis quos omnis soluta facere nihil, deserunt fugit, molestias natus aperiam harum veritatis animi fuga. Error iure adipisci cupiditate fugiat?</div>
+        <div class="card">card 3</div>
+    </div>
+
+</body>
+</html>

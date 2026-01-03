@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 - Multi colour website using css Variables</title>
+</head>
+<style>
+    :root {
+        --color: lightblue;
+        --seccolor: rgba(223, 243, 107, 0.714);
+        --defpad:10px;
+        --tercolor:cyan;
+    }
+    nav{
+        background-color: var(--color);
+    }
+
+    ul li {
+        list-style-type: none;
+        padding: var(--defpad);
+    }
+    ul{
+        display:flex;
+    }
+    .box{
+
+        background-color: var(--seccolor);
+    }
+    img{
+        padding: 2px;
+        margin: 5px;
+        width: 350px;
+        border-radius: 30px;
+    }
+    figcaption{
+        text-transform:capitalize;
+    }
+    .write{
+        background-color: var(--tercolor);
+    }
+</style>
+
+<body>
+    <nav>
+        <h1>Welcome to my multicolor website</h1>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact us</li>
+            <li>
+                <search> Search<input type="text" placeholder="🔎"></search>
+            </li>
+        </ul>
+    </nav>
+    <div class="box">
+        <figure><img src="324436061_846986146358801_1363728097933487141_n.jpg" alt="Manpho taking it"> 
+        <figcaption>Actual picture of manpho taking it deep</figcaption>
+    </figure>
+    </div>
+    <div class="write">
+        <h2>Learn more about us</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque eos vero ipsum, tempore voluptatibus sint suscipit debitis quae odio, a delectus, temporibus sequi mollitia ad aperiam. Molestiae dolor ullam nisi inventore dolores temporibus quae repellendus iste, nesciunt molestias nemo a doloribus mollitia commodi velit. Voluptates asperiores, ipsam aut repudiandae iste vel id neque molestiae. Temporibus, officiis aperiam totam illo assumenda maxime corrupti sequi, ratione soluta distinctio eaque. Mollitia iusto, unde voluptatum dolor omnis, impedit esse cumque sapiente praesentium ullam assumenda ipsum voluptate! Aliquam voluptas cum optio, temporibus iusto itaque ad reprehenderit explicabo adipisci quas beatae, rerum ducimus modi accusantium debitis deserunt quis velit doloribus repudiandae ullam, aspernatur sequi! Labore aliquid numquam culpa at, dicta voluptate obcaecati maiores enim. Error soluta repellat nemo dolores reprehenderit, assumenda dolor eos, quis reiciendis asperiores ratione excepturi accusamus fugit, magnam atque dolorem sint? A suscipit impedit, error facere voluptatibus cum voluptates laboriosam cupiditate provident corporis vel sequi pariatur quaerat quod nesciunt in dolorum repellat id quis, dignissimos nisi, non quos tempora exercitationem. Possimus molestiae similique minus magnam doloremque adipisci eveniet repellendus nisi, exercitationem omnis in enim eos modi distinctio esse molestias incidunt ipsam tempore, pariatur et maxime libero doloribus numquam autem. Molestiae quam est perferendis at atque architecto, officia beatae optio praesentium obcaecati nihil amet repellat fugiat iste quaerat asperiores quod, sapiente molestias neque aspernatur, ipsa in maiores natus? Maiores provident, molestias unde fugit quod deleniti assumenda, maxime repudiandae mollitia nostrum porro labore quia eaque laboriosam quis, possimus aliquam accusantium eligendi et. Itaque voluptas maiores repellat nostrum inventore obcaecati facere explicabo incidunt earum voluptates nihil asperiores, non amet expedita esse odio ipsam accusantium aperiam, nulla veniam recusandae ex quam. Eveniet ullam saepe corporis expedita ipsam. Placeat nesciunt nisi iste maiores error ipsa, autem iure. Atque sed est obcaecati suscipit ratione repellat sit libero? Animi officiis, eum aperiam expedita fuga facere consequuntur unde rem sint. Repellat explicabo sapiente libero laborum eius! Neque placeat cupiditate quibusdam id ex, quod dicta eligendi vel aspernatur commodi error ut quos praesentium consequatur minima fugit voluptas exercitationem quia, quisquam doloremque a consequuntur incidunt suscipit! Accusantium consectetur omnis nam minus obcaecati eligendi itaque dolores, praesentium pariatur quasi tempora nisi esse eaque quod sequi est ipsum aut inventore libero? Aut rem, nesciunt commodi incidunt veniam corrupti? Quam, impedit, reiciendis aut perspiciatis ipsa illum natus labore dolorem rerum sint ad modi unde numquam architecto voluptate quae quos adipisci. Perspiciatis iure dolorum, ipsum quos possimus, placeat, maxime debitis architecto explicabo labore dicta. Excepturi non aut beatae natus dolor officiis dolorem eligendi vero mollitia corrupti. Illo nostrum architecto quibusdam voluptas qui odio labore. Aspernatur odio, dignissimos facere modi officia quis iste ratione expedita blanditiis quod cupiditate esse soluta incidunt? Sunt dolorem deleniti facilis perspiciatis distinctio recusandae beatae similique eius ipsa exercitationem. Nam, veritatis quae iste quasi perspiciatis odit doloribus enim neque officiis iure, aut consectetur voluptatem, esse animi porro amet quas. Sequi quae odio aliquid facilis rerum voluptatum maiores ad! Molestias facilis, eaque dignissimos quisquam ratione veritatis culpa dicta impedit. Incidunt laborum aperiam, eos, nulla consectetur sint ab corrupti distinctio odio itaque nemo. Nesciunt, velit. Nobis, accusantium. Incidunt cum nemo delectus nam iusto asperiores non suscipit repellendus, ipsum quisquam quo mollitia est dolorum assumenda sint cumque dolorem reprehenderit? Atque ea quisquam et!</p>
+    </div>
+</body>
+
+</html>
