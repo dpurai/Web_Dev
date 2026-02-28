@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+</head>
+<style>
+    .container{
+         border: 2px solid rgb(25, 25, 24);
+         display:grid;
+         /* grid defines how many rows and columns are present*/
+         grid-template-columns: [first]120px [second]100px; /*these are auto if rows are made then columns automatic made acc to the need*/
+         grid-template-rows:  100px 100px 100px;
+    }
+    .item{
+        border: 2px solid red;
+        height : 55px;
+        width : 55px;
+
+    }
+    .item-4{
+        grid-row: 1/2;
+        grid-column: first/second; /*used name here*/
+
+        /* grid-row-start: 1/2;
+        or this both are same (w column aswell)
+        grid-row-start: 1;
+        grid-row-end: 2; */
+    }
+    .item-1{
+        grid-row: 1/2;  /*shuru/ khatam  line 1 se line 2 tak */
+        grid-column: 1/2;
+    }
+</style>
+<body>
+    <div class="container">
+    <div class="item item-1">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item item-4">4</div>
+    <div class="item">5</div>
+</div>
+</body
